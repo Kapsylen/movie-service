@@ -15,7 +15,7 @@ import org.testcontainers.containers.MongoDBContainer;
 import org.testcontainers.junit.jupiter.Container;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class UserServiceTest {
+class UserServiceIntegrationTest {
 
   @Autowired
   UserService service;
