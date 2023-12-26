@@ -95,6 +95,6 @@
         </configuration>
       </plugin>
     </plugins>
+    <finalName>sb-app</finalName>
   </build>
-
 </project>

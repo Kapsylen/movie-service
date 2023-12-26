@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+mongodb:
+  path: mongodb://localhost:27017/test
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: docker
+
+mongodb:
+  path: mongodb://mongodb/docker-db

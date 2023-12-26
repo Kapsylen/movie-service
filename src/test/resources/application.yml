@@ -1,0 +1,7 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+
+mongodb:
+  path: mongodb://localhost:27017/test
