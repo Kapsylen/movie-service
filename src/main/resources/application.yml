@@ -6,6 +6,10 @@ spring:
 mongodb:
   path: mongodb://localhost:27017/test
 
+app:
+    openapi:
+      swagger-url: http://localhost:8080
+
 ---
 
 spring:
@@ -15,3 +19,7 @@ spring:
 
 mongodb:
   path: mongodb://mongodb/docker-db
+
+app:
+  openapi:
+    swagger-url: http://localhost:8080

@@ -25,9 +25,4 @@ public class SimpleMongoConfig {
         .applyConnectionString(connectionString).build();
     return MongoClients.create(settings);
   }
-
-  @Bean
-  public MongoTemplate mongoTemplate() {
-    return new MongoTemplate(mongo(), "test");
-  }
 }

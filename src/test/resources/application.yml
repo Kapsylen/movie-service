@@ -5,3 +5,7 @@ spring:
 
 mongodb:
   path: mongodb://localhost:27017/test
+
+app:
+  openapi:
+    swagger-url: http://localhost:8080

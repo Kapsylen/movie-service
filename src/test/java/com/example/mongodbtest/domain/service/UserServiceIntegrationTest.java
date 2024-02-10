@@ -56,7 +56,7 @@ class UserServiceIntegrationTest {
     var thrown = assertThrows(ResourceNotFoundException.class, () -> {
       service.getUser(userReceipt.getId());
     });
-    assertEquals("We were unable to find a user with userId: "+userReceipt.getId(), thrown.getMessage());
+    assertEquals("Unable to find a user with userId: "+userReceipt.getId(), thrown.getMessage());
   }
 
   @Test
