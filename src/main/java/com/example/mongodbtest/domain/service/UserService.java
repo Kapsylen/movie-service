@@ -28,7 +28,7 @@ public class UserService {
       repository.deleteById(userId);
     } else {
       throw new ResourceNotFoundException(
-          ErrorCode.RESOURCE_NOT_FOUND, "We were unable to find a user with userId: " + userId);
+          ErrorCode.RESOURCE_NOT_FOUND, "Unable to find a user with userId: " + userId);
     }
   }
 
@@ -49,7 +49,7 @@ public class UserService {
       return toUserView(newUser);
     } else {
       throw new ResourceNotFoundException(
-          ErrorCode.RESOURCE_NOT_FOUND, "We were unable to find a user with userId: " + user.getId());
+          ErrorCode.RESOURCE_NOT_FOUND, "Unable to find a user with userId: " + user.getId());
     }
   }
 
@@ -57,7 +57,7 @@ public class UserService {
     return toUserView(repository.findById(
             userId)
         .orElseThrow(() -> new ResourceNotFoundException(
-            ErrorCode.RESOURCE_NOT_FOUND, "We were unable to find a user with userId: " + userId)));
+            ErrorCode.RESOURCE_NOT_FOUND, "Unable to find a user with userId: " + userId)));
   }
 
   public void removeAll() {
