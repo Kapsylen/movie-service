@@ -8,11 +8,11 @@
     <version>3.2.0</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
-  <groupId>com.example</groupId>
-  <artifactId>mongodb-springboot-lab</artifactId>
+  <groupId>dev.sesv</groupId>
+  <artifactId>movie-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>mongodb-springboot-lab</name>
-  <description>mongodb-springboot-lab</description>
+  <name>movie-service</name>
+  <description>movie-service</description>
   <properties>
     <java.version>17</java.version>
   </properties>

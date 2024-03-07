@@ -30,10 +30,10 @@ public class OpenAPIConfig {
     License mitLicense = new License().name("Example License").url("https://www.example-project.com/");
 
     Info info = new Info()
-        .title("User API")
+        .title("Movie API")
         .version("1.0")
         .contact(contact)
-        .description("This API exposes endpoints to create a user.").termsOfService("https://www.example-project.com")
+        .description("This API exposes Movie Service endpoints.").termsOfService("https://www.example-project.com")
         .license(mitLicense);
 
     return new OpenAPI().info(info).servers(List.of(devServer));
